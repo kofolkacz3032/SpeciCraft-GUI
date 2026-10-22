@@ -1,0 +1,57 @@
+*, button, img, div {
+    border-radius: 0px !important;
+}
+
+/* Vytvoření Minecraft GUI slotu pro karty a tlačíka */
+.main-card-card,
+.main-heroCard-card,
+.view-homeShortCutsGrid-shortcut {
+    background-color: #8B8B8B !important; /* Šedý vnitřek slotu */
+    border-style: solid !important;
+    border-width: 3px !important;
+    /* Klasický Minecraft 3D efekt slotu: nahoru/vlevo tmavá, dolů/vpravo světlá */
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+    border-radius: 0px !important;
+    padding: 8px !important;
+}
+
+/* Když na kartu najedeš myší (efekt výběru jako v inventáři) */
+.main-card-card:hover,
+.view-homeShortCutsGrid-shortcut:hover {
+    background-color: #BEBEBE !important; /* Mírné zesvětlení slotu při hooveru */
+    border-color: #555555 #FFFFFF #FFFFFF #555555 !important;
+}
+
+/* Ohraničení pro každou jednotlivou kartu (obal + text dohromady) */
+.main-card-card {
+    background-color: #C6C6C6 !important; /* Světle šedý podklad slotu */
+    border: 3px solid !important;
+    /* Minecraft 3D efekt okraje: nahoře/vlevo tmavá, dole/vpravo světlá */
+    border-color: #373737 #FFFFFF #FFFFFF #373737 !important;
+    border-radius: 0px !important;
+    padding: 10px !important;
+}
+
+/* Zprůhlednění vnitřku karty, aby na šedém podkladu dobře vynikl obrázek i text */
+.main-card-card div,
+.main-card-card span,
+.main-card-card a {
+    background-color: transparent !important;
+}
+
+/* Efekt při najetí myší na kartu */
+.main-card-card:hover {
+    background-color: #D6D6D6 !important;
+    border-color: #555555 #FFFFFF #FFFFFF #555555 !important;
+}
+
+/* Načtení Minecraft fontu */
+@font-face {
+    font-family: 'MinecraftFont';
+    src: url('minecraft.ttf');
+}
+
+/* Nastavení Minecraft fontu pro celou aplikaci */
+*, button, span, p, a, input {
+    font-family: 'MinecraftFont', monospace !important;
+}
